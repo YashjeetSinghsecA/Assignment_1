@@ -1,0 +1,234 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+    margin: 0;
+  }
+  
+  /* Header styles */
+  header {
+    position: relative;
+    z-index: 2; /* Ensure header is above video */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    color: #f0f0f0; /* Light text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #f0f0f0; /* Light text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Darker hover background color */
+  }
+  
+  /* Main content styles */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    background-color: transparent; /* transparent */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    position: relative;
+    z-index: 1; /* Ensure content is above video */
+  }
+  
+  /* Sections */
+  .content-section {
+    width: 100%;
+    max-width: 800px; /* Limit section width */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #333; /* Dark background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for each section */
+  }
+  
+  .content-section h2 {
+    color: #f0f0f0; /* Light text color */
+    border-bottom: 2px solid #f0f0f0; /* Bottom border for headings */
+    padding-bottom: 5px;
+  }
+  
+  .content-section article {
+    line-height: 1.8;
+  }
+  
+  /* Form styles */
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666; /* Darker border color */
+    border-radius: 5px;
+    background-color: #333; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #666; /* Darker button background color */
+    color: #f0f0f0; /* Light text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555; /* Slightly darker hover background color */
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    background-color: #111; /* Even darker background color */
+    color: #888; /* Lighter text color */
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2; /* Ensure footer is above video */
+  }
+  
+ /* Video background */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    #bg-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    #bg-video {
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  
+  
+  /* Comments Section */
+  #comments {
+    width: 100%;
+    max-width: 300px; /* Adjust width as needed */
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px; /* Ensure it's not too close to the top */
+    align-self: flex-start; /* Align to the start of the flex container (left side) */
+    margin-bottom: 20px; /* Add margin at the bottom */
+  }
+  
+  #comments h2 {
+    color: #f0f0f0; /* Light text color */
+    border-bottom: 2px solid #f0f0f0; /* Bottom border for headings */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #comments ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #comments ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #666; /* Darker separator color */
+    padding-bottom: 10px;
+  }
+  
+  #comments ul li:last-child {
+    border-bottom: none; /* Remove border from the last comment */
+  }
+  
+  #comments ul li strong {
+    font-weight: bold;
+    color: #f0f0f0; /* Light text color */
+  }
+  /* Style for the About Me section */
+#hobby {
+    background-color: #333; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+    padding: 40px; /* Padding for content */
+    text-align: center; /* Center align content */
+  }
+  
+  #hobby article {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center align content horizontally */
+  }
+  
+  #hobby h2 {
+    margin-bottom: 20px; /* Bottom margin for heading */
+  }
+  
+  #hobby p {
+    line-height: 1.8; /* Line height for paragraphs */
+  }
+  
+  /* Styling for the hobby-related images */
+  .hobby-images {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    margin-top: 20px; /* Top margin for images */
+  }
+  
+  .hobby-images img {
+    width: 200px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Margin between images */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
